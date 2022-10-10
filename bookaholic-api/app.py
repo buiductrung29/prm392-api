@@ -54,6 +54,8 @@ app.add_middleware(
 )
 
 graphql_app = GraphQLRouter(schema)
+
+# include path
 app.include_router(graphql_app, prefix="/graphql")
 
 # static files provider

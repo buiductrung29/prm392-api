@@ -2,4 +2,10 @@ import strawberry
 
 @strawberry.type
 class Mutation:
-    pass
+    @strawberry.mutation
+    def register(self):
+        pass
+
+    @strawberry.mutation
+    def login(self):
+        pass
